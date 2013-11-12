@@ -1,10 +1,11 @@
 {
     "name": "homeframework/container",
     "type": "library",
-    "description": "HomeFramework Container Component",
+    "description": "HomeFramework2 Container Component",
     "keywords": [],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "homeframework/container": "dev-master"
     },
     "autoload": {
         "psr-0": { "HomeFramework\\container\\": "" }
