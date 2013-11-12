@@ -1,12 +1,18 @@
 {
     "name": "homeframework/container",
+    "version": "1.0.0",
     "type": "library",
     "description": "HomeFramework2 Container Component",
-    "keywords": [],
+    "keywords": [
+        "Container",
+        "dependency injection",
+        "Lazy loading"
+    ],
     "authors": [
         {
             "name": "Adrien Petitjean",
-            "email": "adrien@webdevelop.fr"
+            "email": "adrien@webdevelop.fr",
+            "role": "Developer"
         }
     ],
     "require": {
