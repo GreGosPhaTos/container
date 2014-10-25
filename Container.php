@@ -30,7 +30,7 @@ class Container implements IContainer {
      */
     public function get($serviceName, $forceInstance = false) {
         if (!$this->hasService($serviceName)) {
-            throw new ContainerInvalidArgumentException("Service [".$serviceName."] doesn't exists");
+            throw new ContainerInvalidArgumentException("Service [$serviceName] doesn't exists");
         } else if (true === $forceInstance || !isset($this->cache[$serviceName])) {
             $this->cache($serviceName);
         }
@@ -74,7 +74,7 @@ class Container implements IContainer {
         }
 
         if (!is_callable($callback)) {
-            throw new ContainerInvalidArgumentException("Callback must be a callable function in service : [" . $serviceName . "]");
+            throw new ContainerInvalidArgumentException("Callback must be a callable function in service : [$serviceName]");
         }
 
         $this->container[$serviceName] = $callback;
